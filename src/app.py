@@ -6,19 +6,19 @@ app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 tabs = {
-    "runtime_time": {
-        "name": "runtime_time",
-        "url": "./runtime_time",
-        "descriptive_name": "Run Time - By Time",
-        "image_name": "running-time.png",
-        "tableau_name": "/BCTModeRunningTime/RunTimeBCT",
-    },
     "otp": {
         "name": "otp",
         "url": "./otp",
         "descriptive_name": "On Time Performance",
         "image_name": "timer-icon.png",
         "tableau_name": "/BCTOTP/SystemOTP",
+    },
+    "runtime_time": {
+        "name": "runtime_time",
+        "url": "./runtime_time",
+        "descriptive_name": "Run Time - By Period",
+        "image_name": "running-time.png",
+        "tableau_name": "/BCTModeRunningTime/RunTimeBCT",
     },
     "runtime_trip": {
         "name": "runtime_trip",
