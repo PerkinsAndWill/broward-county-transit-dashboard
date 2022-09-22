@@ -3,30 +3,28 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
 
-app.wsgi_app = ProxyFix(
-    app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
-)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 tabs = {
-    "otp": {
-        "name": "otp",
-        "url": "./otp",
-        "descriptive_name": "On Time Performance",
-        "image_name": "hist-icon.png",
-        "tableau_name": "/BCTOTP/SystemOTP",
-    },
     "runtime_time": {
         "name": "runtime_time",
         "url": "./runtime_time",
         "descriptive_name": "Run Time - By Time",
-        "image_name": "hist-icon.png",
+        "image_name": "running-time.png",
         "tableau_name": "/BCTModeRunningTime/RunTimeBCT",
+    },
+    "otp": {
+        "name": "otp",
+        "url": "./otp",
+        "descriptive_name": "On Time Performance",
+        "image_name": "timer-icon.png",
+        "tableau_name": "/BCTOTP/SystemOTP",
     },
     "runtime_trip": {
         "name": "runtime_trip",
         "url": "./runtime_trip",
         "descriptive_name": "Run Time - By Trip",
-        "image_name": "hist-icon.png",
+        "image_name": "map-icon.png",
         "tableau_name": "/BCTModeRunningTimebyTrip/RunTimeBCT",
     },
 }
