@@ -12,7 +12,7 @@ tabs = {
         "descriptive_name": "On Time Performance",
         "subdescription_1": "Introduction",
         "subdescription_2": "System",
-        "subdescription_3": "route",
+        "subdescription_3": "Route",
         "image_name": "timer-icon.png",
         "tableau_name": "/BCTOTP/Introduction",
     },
