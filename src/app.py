@@ -24,7 +24,7 @@ tabs = {
         "subdescription_2": "Mode",
         "subdescription_3": "Percentile",
         "image_name": "running-time.png",
-        "tableau_name": "/BCTModeRunningTime/Introduction",
+        "tableau_name": "/BCTModebyTP/Introduction",
     },
     "runtime_trip": {
         "name": "runtime_trip",
@@ -34,7 +34,7 @@ tabs = {
         "subdescription_2": "Mode",
         "subdescription_3": "Percentile",
         "image_name": "map-icon.png",
-        "tableau_name": "/BCTModeRunningTimebyTrip/Introduction",
+        "tableau_name": "/BCTModebyTrip/Introduction",
     },
 }
 
